@@ -1,5 +1,5 @@
 {% set name = "lona" %}
-{% set version = "1.8.4" %}
+{% set version = "1.8.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lona-{{ version }}.tar.gz
-  sha256: a5a5c60ea80e52cf6afed5beb65367892e08ccc795ba21bd4a55da8e74c250b2
+  sha256: b336d93f2df8800c8705d50437c848fa568dc77148b35776ec2114573976daf1
 
 build:
   number: 0
@@ -17,8 +17,13 @@ build:
 
 requirements:
   host:
+    - aiohttp
+    - jinja2
     - pip
     - python >=3.6
+    - rlpython
+    - typing_extensions
+    - yarl
   run:
     - aiohttp >=3
     - jinja2
