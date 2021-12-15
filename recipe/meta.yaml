@@ -19,6 +19,7 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - typing_extensions
   run:
     - aiohttp >=3
     - jinja2
