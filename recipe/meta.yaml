@@ -17,6 +17,7 @@ build:
 
 requirements:
   host:
+    - jinja2
     - pip
     - python >=3.6
     - typing_extensions
