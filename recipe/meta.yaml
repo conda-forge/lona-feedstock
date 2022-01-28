@@ -36,8 +36,15 @@ test:
   imports:
     - lona
     - lona.command_line
+    - lona.events
+    - lona.html
+    - lona.html.data_binding
+    - lona.middlewares
+    - lona.shell
+    - lona.shell.commands
   commands:
     - pip check
+    - lona --help
   requires:
     - pip
 
