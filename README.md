@@ -1,11 +1,11 @@
-About lona
-==========
+About lona-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lona-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/lona-web-org/lona
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lona-feedstock/blob/main/LICENSE.txt)
 
 Summary: Write responsive web apps in full python
 
