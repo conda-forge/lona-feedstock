@@ -1,5 +1,5 @@
 {% set name = "lona" %}
-{% set version = "1.12.4" %}
+{% set version = "1.13" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lona-{{ version }}.tar.gz
-  sha256: f9e5ceffba4dbcdcc5c06c7cf75dd16ff149f9e00b8d61df98dc5975aeedd79a
+  sha256: e42d072a10520765fd020ca983d1c902e2545540831a497edbeac62be4286f0c
 
 build:
   number: 0
