@@ -18,12 +18,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
     - setuptools >=61.0
   run:
     - aiohttp >=3,<4
     - jinja2
-    - python >=3.6
+    - python >=3.8
     - rlpython
     - typing_extensions
 
