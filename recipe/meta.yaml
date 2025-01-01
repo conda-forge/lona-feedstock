@@ -7,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lona-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lona-{{ version }}.tar.gz
   sha256: 539a2a7edc0738c7f5578826182e28e9c58598bd2e0232833ff843b37f8b1640
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools >=61.0
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - aiohttp >=3,<4
     - watchfiles
     - jinja2
@@ -36,6 +36,7 @@ test:
     - lona --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/lona-web-org/lona
